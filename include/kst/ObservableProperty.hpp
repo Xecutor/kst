@@ -20,6 +20,10 @@ public:
     notify();
   }
 
+  ArgType getValue() const {
+    return value;
+  }
+
   ObservableProperty<T>& operator=(ArgType newValue) {
     setValue(newValue);
     return *this;
