@@ -36,13 +36,6 @@ public:
     return rv;
   }
 
-  template <class... Args>
-  uint32_t subscribeChain(Args&&... s) {
-    uint32_t rv = lastId++;
-    subs.emplace_back(rv, std::forward<S>(s));
-    return rv;
-  }
-
   void unsubscribe(uint32_t id) {
     subs.erase(std::remove_if(subs.begin(), subs.end(), [id](const auto& p) { return p.first == id; }), subs.end());
   }
