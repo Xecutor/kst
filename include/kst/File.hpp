@@ -14,7 +14,18 @@
 #include <string>
 
 #ifdef _WIN32
+#ifndef NOGDI
 #define NOGDI
+#endif
+#ifndef WIN32_LEAN_AND_MEAN 
+#define WIN32_LEAN_AND_MEAN 
+#endif
+#ifndef VC_EXTRALEAN 
+#define VC_EXTRALEAN 
+#endif
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 #include <io.h>
 #include <winsock2.h>
 #define lseek _lseek
