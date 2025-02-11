@@ -23,6 +23,7 @@ struct ArgsList{
   {
       static void Fmt(FormatBuffer& buf,const void* val,int w,int p)
       {
+          void customformat(kst::FormatBuffer&, const T&,int,int);
           customformat(buf,*(const T*)val,w,p);
       }
   };

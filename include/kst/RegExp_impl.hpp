@@ -1,6 +1,6 @@
 /*
   $Id: RegExp_impl.hpp,v 1.8 2013/08/12 11:22:30 skv Exp $
-  Copyright (c) Konstantin Stupnik (aka Xecutor) 2001 <skv@eyeline.mobi>
+  Copyright (c) Konstantin Stupnik (aka Xecutor) 2001 <konstantin.stupnik@gmail.com>
   You can use, modify, distribute this code or any other part
   only with permissions of author or Eyeline Communications!
 
